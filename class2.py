@@ -9,7 +9,9 @@ import seaborn as sns
 import warnings
 
 warnings.filterwarnings('ignore')
-
+# Function to check if two strings match
+def check_strings_match(str1, str2):
+    return str1 == str2
 # Load the dataset
 boston = load_boston()
 X = pd.DataFrame(boston.data, columns=boston.feature_names)
