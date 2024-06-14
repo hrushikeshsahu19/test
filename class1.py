@@ -74,15 +74,9 @@ print("Predicted price for the example data:", predicted_price)
 def multiply_numbers(num1, num2):
     return num1 * num2
 
-# Main code
-if __name__ == "__main__":
-    # Prompt the user to input two numbers
-    number1 = float(input("Enter the first number: "))
-    number2 = float(input("Enter the second number: "))
-
-    # Call the function to multiply the numbers
-    result = multiply_numbers(number1, number2)
-
-    # Display the result
-    print(f"The product of {number1} and {number2} is {result}.")
+# Function to calculate HCF using Euclidean algorithm
+def calculate_hcf(num1, num2):
+    while num2:
+        num1, num2 = num2, num1 % num2
+    return num1
 
