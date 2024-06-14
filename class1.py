@@ -69,3 +69,20 @@ plt.show()
 example_data = X_test.iloc[0].values.reshape(1, -1)
 predicted_price = model.predict(example_data)
 print("Predicted price for the example data:", predicted_price)
+
+# Function to multiply two numbers
+def multiply_numbers(num1, num2):
+    return num1 * num2
+
+# Main code
+if __name__ == "__main__":
+    # Prompt the user to input two numbers
+    number1 = float(input("Enter the first number: "))
+    number2 = float(input("Enter the second number: "))
+
+    # Call the function to multiply the numbers
+    result = multiply_numbers(number1, number2)
+
+    # Display the result
+    print(f"The product of {number1} and {number2} is {result}.")
+
